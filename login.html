@@ -28,7 +28,7 @@
       box-sizing: border-box;
     }
     button {
-      background-color: #a5a5a5;
+      background-color: #000000;
       color: white;
       cursor: pointer;
     }
@@ -42,17 +42,12 @@
   <div class="container">
     <h2>Iniciar sesión</h2>
 
-    <form action="/procesar_iniciar_sesion" method="post">
-      <label for="username"><b>User</b></label>
-      <input type="text" placeholder="Ingresa tu usuario" name="username" required>
-
-      <label for="password"><b>Password</b></label>
-      <input type="password" placeholder="Ingresa tu contraseña" name="password" required>
-
+    <form action="otra_pagina.html" method="post">
+      <input type="text" name="username" required>
+      <input type="password" name="password" required>
       <button type="submit">Log in</button>
     </form>
   </div>
 
 </body>
 </html>
-
