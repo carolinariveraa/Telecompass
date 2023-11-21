@@ -117,7 +117,8 @@ body, html {
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>We know.</h3>
-      <p>Our goal is to help telecom companies to retain their customers by offering personalized retention strategies. </p>
+      <p>Our goal is to help telecommunication companies to retain their customers by offering personalized retention strategies. The real value of our service lies in our ability to predict and prevent churn. By identifying customers
+        at risk of churn, we provide telcos with the opportunity to take proactive measures.</p>
       <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
     </div>
     <div class="w3-col m6">
@@ -137,7 +138,6 @@ body, html {
         <div class="w3-container">
           <h3>Félix Leborgne</h3>
           <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -151,7 +151,6 @@ body, html {
         <div class="w3-container">
           <h3>Carolina Rivera</h3>
           <p class="w3-opacity">Art Director</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -165,7 +164,6 @@ body, html {
         <div class="w3-container">
           <h3>Santiago Escobar</h3>
           <p class="w3-opacity">Web Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -204,37 +202,29 @@ body, html {
 
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l4 m6">
-      <button onclick="showContent('Variables', '/pics/var.png', 'That have great predictive power in terms of the probability of dropout.')" class="w3-button w3-hover-opacity">Identification of Key Variables</button>
+      <div class="w3-container w3-padding w3-center">
+        <h4><b>Identification of Key Variables</b></h4>
+        <img src="/pics/var.png" alt="Identification of Key Variables" class="w3-image" style="max-width: 100%; max-height: 200px;">
+        <p>That have great predictive power in terms of the probability of dropout.</p>
+      </div>
     </div>
     <div class="w3-col l4 m6">
-      <button onclick="showContent('Segmentation', '/pics/seg.png', 'Divide customers into clusters to understand individual needs and behaviors.')" class="w3-button w3-hover-opacity">Customer Segmentation</button>
+      <div class="w3-container w3-padding w3-center">
+        <h4><b>Customer Segmentation</b></h4>
+        <img src="/pics/seg.png" alt="Customer Segmentation" class="w3-image" style="max-width: 100%; max-height: 200px;">
+        <p>Divide customers into clusters to understand individual needs and behaviors.</p>
+      </div>
     </div>
     <div class="w3-col l4 m6">
-      <button onclick="showContent('Actions', '/pics/act.png', 'Personalized commercial strategies to retain customers')" class="w3-button w3-hover-opacity">Proposal of Commercial Actions</button>
-    </div>
-  </div>
-
-  <!-- Modal for text and image on click -->
-  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="modalImage" class="w3-image" style="max-width: 100%; max-height: 80vh;">
-      <p id="caption" class="w3-opacity w3-large"></p>
+      <div class="w3-container w3-padding w3-center">
+        <h4><b>Proposal of Commercial Actions</b></h4>
+        <img src="/pics/act.png" alt="Proposal of Commercial Actions" class="w3-image" style="max-width: 100%; max-height: 200px;">
+        <p>Personalized commercial strategies to retain customers.</p>
+      </div>
     </div>
   </div>
 </div>
 
-<script>
-  function showContent(title, imageUrl, text) {
-    var modal = document.getElementById('modal01');
-    var modalImage = document.getElementById('modalImage');
-    var captionText = document.getElementById('caption');
-    
-    modalImage.src = imageUrl;
-    captionText.innerHTML = text;
-    modal.style.display = 'block';
-  }
-</script>
 
 
 
