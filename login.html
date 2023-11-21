@@ -2,14 +2,47 @@
 <html>
 <head>
   <title>Iniciar sesión</title>
-  <!-- Agrega aquí tus enlaces a archivos CSS o estilos -->
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+    }
+    input[type="text"],
+    input[type="password"],
+    button {
+      width: calc(100% - 20px);
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
 
-  <h2>Iniciar sesión</h2>
+  <div class="container">
+    <h2>Iniciar sesión</h2>
 
-  <form action="/procesar_iniciar_sesion" method="post">
-    <div class="container">
+    <form action="/procesar_iniciar_sesion" method="post">
       <label for="username"><b>Usuario</b></label>
       <input type="text" placeholder="Ingresa tu usuario" name="username" required>
 
@@ -17,10 +50,9 @@
       <input type="password" placeholder="Ingresa tu contraseña" name="password" required>
 
       <button type="submit">Iniciar sesión</button>
-    </div>
-  </form>
-
-  <!-- Agrega aquí tus scripts o enlaces a archivos JS -->
+    </form>
+  </div>
 
 </body>
 </html>
+
