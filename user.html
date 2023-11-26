@@ -65,14 +65,26 @@
       <img src="pics/usert.jpg" alt="boy" class="w3-image" width="992" height="1108">
     </header>
   
-    <!-- General Overview Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="general-overview">
-      <h2>General Overview</h2>
-      <p>Here, get an instant snapshot of your telecom business's vital metrics. From overall customer count to churn rates and demographic insights, this dashboard provides a comprehensive view of your customer base and their behaviors.</p>
-    
-      <!-- Content for General Overview -->
-      <img src="pics/over.png" alt="General Overview Image" style="width:100%">
+<!-- General Overview Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="general-overview">
+    <h2>General Overview</h2>
+    <p>Here, get an instant snapshot of your telecom business's vital metrics. From overall customer count to churn rates and demographic insights, this dashboard provides a comprehensive view of your customer base and their behaviors.</p>
+  
+    <!-- Content for General Overview -->
+    <img src="pics/over.png" alt="General Overview Image" style="width:100%">
+  
+    <!-- Data Summary -->
+    <div class="data-summary">
+      <h3>Data Summary</h3>
+      <p><strong>Age:</strong> The average age of customers is 46.51 years, with a standard deviation of around 16.75. The age range varies from 19 years to 80 years.</p>
+      <p><strong>Churn Rates:</strong> 73.46% of data labeled as 'not churn' and only 26.54% as 'churn'.</p>
+      <p><strong>Total Customers:</strong> 7043</p>
+      <p><strong>Gender Distribution:</strong> Female customers represent 49.52%, while the rest are male.</p>
     </div>
+    <!-- Map -->
+    <iframe src="map.html" style="width: 100%; height: 400px; border: none;"></iframe>
+  </div>
+  
     
 <!-- Churn Analysis Section -->
 <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="churn-analysis">
@@ -84,34 +96,55 @@
   </div>
 
   <!-- Services Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="services">
+<div class="w3-padding-64 w3-content w3-text-grey" id="services">
     <!-- Services Section -->
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="services">
-        <h2>Explore Service Usage</h2>
-        <p>Explore the usage of different services among customers. Gain insights into the distribution and adoption of various services offered, impacting overall customer experience and engagement.</p>
-      
-        <!-- Services Information -->
-        <div class="w3-row-padding" style="margin-top: 32px">
-          <!-- Services List -->
-          <div class="w3-half">
-            <h3>Services</h3>
-            <p>Explore the usage of the following services:</p>
-            <ul>
-              <li>Phone Service</li>
-              <li>Internet Service</li>
-              <li>Multiple Lines</li>
-              <li>Contract Type</li>
-              <li>Payment Method</li>
-              <li>Paperless Billing</li>
-            </ul>
-          </div>
+      <h2>Explore Service Usage</h2>
+      <p>Explore the usage of different services among customers. Gain insights into the distribution and adoption of various services offered, impacting overall customer experience and engagement.</p>
+    
+      <!-- Services Information -->
+      <div class="w3-row-padding" style="margin-top: 32px">
+        <!-- Services List -->
+        <div class="w3-half">
+          <h3>Services</h3>
+          <p>Explore the usage of the following services:</p>
+          <ul>
+            <li>Phone Service</li>
+            <li>Internet Service</li>
+            <li>Multiple Lines</li>
+            <li>Contract Type</li>
+            <li>Payment Method</li>
+            <li>Paperless Billing</li>
+          </ul>
         </div>
       </div>
-
-    
+    </div>
+  
     <!-- Content for Services -->
     <img src="pics/service.png" alt="General Overview Image" style="width:100%">
+  
+    <!-- Conclusion about Services -->
+    <div class="services-conclusion">
+      <h3>Conclusions on Service Usage</h3>
+      <p>For our conclusions, we segregated the services into Internet Service and Support Services:</p>
+      <ul>
+        <li><strong>Internet Service:</strong>
+          <ul>
+            <li>Customers who subscribe to Fiber for internet service have a significantly lower churn rate.</li>
+            <li>Customers using Cable internet service tend to have higher churn rates.</li>
+            <li>Customers without any internet service exhibit a notably low churn rate.</li>
+          </ul>
+        </li>
+        <li><strong>Support Services:</strong>
+          <ul>
+            <li>Customers not subscribing to support services like Online Security, Online Backup, Device Protection Plan, Premium Tech Support are more prone to churning.</li>
+          </ul>
+        </li>
+      </ul>
+      <p>The data visualizations reveal notable trends. Shorter contract durations are strongly associated with higher churn rates. Customers who opt for paperless billing are also more susceptible to churn. Additionally, those using bank withdrawals as their payment method exhibit an increased likelihood of churning.</p>
+    </div>
   </div>
+  
   
   <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
