@@ -108,55 +108,82 @@
     <img src="pics/churn2.png" alt="General Overview Image" style="width:100%">
   </div>
 
-  <!-- Services Section -->
+<!-- Services Section -->
 <div class="w3-padding-64 w3-content w3-text-grey" id="services">
-    <!-- Services Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="services">
-      <h2>Explore Service Usage</h2>
-      <p>Explore the usage of different services among customers. Gain insights into the distribution and adoption of various services offered, impacting overall customer experience and engagement.</p>
-    
-      <!-- Services Information -->
-      <div class="w3-row-padding" style="margin-top: 32px">
-        <!-- Services List -->
-        <div class="w3-half">
-          <h3>Services</h3>
-          <p>Explore the usage of the following services:</p>
-          <ul>
-            <li>Phone Service</li>
-            <li>Internet Service</li>
-            <li>Multiple Lines</li>
-            <li>Contract Type</li>
-            <li>Payment Method</li>
-            <li>Paperless Billing</li>
-          </ul>
-        </div>
+  <!-- Services Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="services">
+    <h2>Explore Service Usage</h2>
+    <p>Explore the usage of different services among customers. Gain insights into the distribution and adoption of various services offered, impacting overall customer experience and engagement.</p>
+
+    <!-- Plotly Graphs -->
+    <div class="w3-row-padding" style="margin-top: 32px">
+      <iframe src="churn_month_to_month.html" width="100%" height="600px" frameborder="0"></iframe>
+    </div>
+
+    <div class="w3-row-padding" style="margin-top: 32px">
+      <iframe src="churn_one_year.html" width="100%" height="600px" frameborder="0"></iframe>
+    </div>
+
+    <div class="w3-row-padding" style="margin-top: 32px">
+      <iframe src="churn_two_year.html" width="100%" height="600px" frameborder="0"></iframe>
+    </div>
+
+    <!-- Services Information -->
+    <div class="w3-row-padding" style="margin-top: 32px">
+      <!-- Services List -->
+      <div class="w3-half">
+        <h3>Services</h3>
+        <p>Explore the usage of the following services:</p>
+        <ul>
+          <li>Phone Service</li>
+          <li>Internet Service</li>
+          <li>Multiple Lines</li>
+          <li>Contract Type</li>
+          <li>Payment Method</li>
+          <li>Paperless Billing</li>
+        </ul>
       </div>
     </div>
-  
-    <!-- Content for Services -->
-    <img src="pics/service.png" alt="General Overview Image" style="width:100%">
-  
-    <!-- Conclusion about Services -->
-    <div class="services-conclusion">
-      <h3>Conclusions on Service Usage</h3>
-      <p>For our conclusions, we segregated the services into Internet Service and Support Services:</p>
-      <ul>
-        <li><strong>Internet Service:</strong>
-          <ul>
-            <li>Customers who subscribe to Fiber for internet service have a significantly lower churn rate.</li>
-            <li>Customers using Cable internet service tend to have higher churn rates.</li>
-            <li>Customers without any internet service exhibit a notably low churn rate.</li>
-          </ul>
-        </li>
-        <li><strong>Support Services:</strong>
-          <ul>
-            <li>Customers not subscribing to support services like Online Security, Online Backup, Device Protection Plan, Premium Tech Support are more prone to churning.</li>
-          </ul>
-        </li>
-      </ul>
-      <p>The data visualizations reveal notable trends. Shorter contract durations are strongly associated with higher churn rates. Customers who opt for paperless billing are also more susceptible to churn. Additionally, those using bank withdrawals as their payment method exhibit an increased likelihood of churning.</p>
-    </div>
   </div>
+
+  <!-- Content for Services -->
+  <img src="pics/service.png" alt="General Overview Image" style="width:100%">
+
+  <!-- Plotly Graphs -->
+  <div class="w3-row-padding" style="margin-top: 32px">
+    <iframe src="distribution_of_tenure.html" width="100%" height="600px" frameborder="0"></iframe>
+  </div>
+
+  <div class="w3-row-padding" style="margin-top: 32px">
+    <iframe src="no_of_customers_by_tenure.html" width="100%" height="600px" frameborder="0"></iframe>
+  </div>
+
+  <!-- Conclusion about Services -->
+  <div class="services-conclusion" style="margin-top: 32px;">
+    <h3>Conclusions on Service Usage</h3>
+    <p>For our conclusions, we segregated the services into Internet Service and Support Services:</p>
+    <ul>
+      <li><strong>Internet Service:</strong>
+        <ul>
+          <li>Customers who subscribe to Fiber for internet service have a significantly lower churn rate.</li>
+          <li>Customers using Cable internet service tend to have higher churn rates.</li>
+          <li>Customers without any internet service exhibit a notably low churn rate.</li>
+        </ul>
+      </li>
+      <li><strong>Support Services:</strong>
+        <ul>
+          <li>Customers not subscribing to support services like Online Security, Online Backup, Device Protection Plan, Premium Tech Support are more prone to churning.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>The data visualizations reveal notable trends. Shorter contract durations are strongly associated with higher churn rates. Customers who opt for paperless billing are also more susceptible to churn. Additionally, those using bank withdrawals as their payment method exhibit an increased likelihood of churning.</p>
+    
+    <!-- New Paragraph -->
+    <p>Based on the distribution and histogram plots, it is evident that customer tenure, represented in months, plays a significant role in churn prediction. The longer a customer has been with the service provider, the less likely they are to churn. This insight suggests that building long-term customer relationships can contribute to reduced churn rates and increased customer retention.</p>
+  </div>
+</div>
+
+
   
   
   <!-- Footer -->
@@ -167,7 +194,7 @@
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
     <!-- Ad -->
-    <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+    <p class="w3-small">TELECOMPASS</p>
     <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
     <!-- End footer -->
   </footer>
