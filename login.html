@@ -42,14 +42,16 @@
   <div class="container">
     <h2>Telecompass</h2>
 
-    <div>
-      <input type="text" name="username" placeholder="User" disabled><br>
-      <input type="password" name="password" placeholder="Password" disabled><br>
-      <button disabled>Log in</button>
-    </div>
+    <form action="user.html" method="post">
+      <div>
+        <input type="text" name="username" placeholder="User" required pattern=".{1,}" title="Please enter at least one character"><br>
+        <input type="password" name="password" placeholder="Password" required pattern=".{1,}" title="Please enter at least one character"><br>
+      </div>
 
-    <a href="user.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOG IN</a>
+      <button type="submit">LOG IN</button>
+    </form>
   </div>
 
 </body>
+
 </html>
